@@ -1,0 +1,352 @@
+{
+	"info": {
+		"_postman_id": "25197419-f8e0-4567-ab39-fb7db86a1aa6",
+		"name": "My_Assiment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27562790",
+		"_collection_link": "https://martian-capsule-202638.postman.co/workspace/Team-Workspace~77639585-fb87-4a81-81a8-336af34e4a81/collection/27562790-25197419-f8e0-4567-ab39-fb7db86a1aa6?action=share&creator=27562790&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "GetAllPatient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/ap1-v1/patient/getAll",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"ap1-v1",
+						"patient",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_patient_by _id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/doctors",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creat_new_patient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\r\n    \"name\":\"Mohammad Abozaid\",\r\n    \"age\":27,\r\n    \"Gender\":\"male\",\r\n    \"phone\":\"05788\"\r\n    \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/ap1-v1/patient",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"ap1-v1",
+						"patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_patient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/ap1-v1/patient/deletePatient/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"ap1-v1",
+						"patient",
+						"deletePatient",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_patient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\r\n    \"name\":\"saleh\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/patient/update/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"patient",
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAlldoctors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/doctors",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDoctorBYid",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n\r\n\r\n    \"id\":22,\r\n    \"name\":\"hazem\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/doctors/22",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"doctors",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatNewDoctor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"D_id\":33,\r\n    \"D_name\":\"ibrahem Abozaid\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/doctors",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateDoctor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n\r\n{\r\n    \"id\":120,\r\n    \"name\": \"Hazem\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/doctors/22",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"doctors",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Doctor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/doctors/22",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"doctors",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllsections",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/sections",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSectionBy _id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/sections",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreatNew Section",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"doctor_id\":\"sss\",\r\n    \"name\":\"head\",\r\n    \"id\":232\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/sections",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sections"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_sectoin",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"name\":\"eays for all\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/sections/100",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sections",
+						"100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletSection",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/sections/100",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sections",
+						"100"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
